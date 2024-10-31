@@ -1,0 +1,16 @@
+registo
+curl -X POST http://localhost:3000/register \
+-H "Content-Type: application/json" \
+-d '{
+      "name": "Rafael",
+      "email": "Rafael@example.com",
+      "password": "Rafael@123"
+    }'
+
+login
+curl -X POST http://localhost:3000/login \
+-H "Content-Type: application/json" \
+-d '{
+      "email": "Rafael@example.com",
+      "senha": "Rafael@123"
+    }'
